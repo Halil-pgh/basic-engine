@@ -21,5 +21,6 @@ void Renderer::render(Shader& shader, VBO& vbo) {
 }
 
 void Renderer::clear(float r, float g, float b) {
+    glClearColor(r, g, b, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 }
